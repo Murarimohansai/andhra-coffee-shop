@@ -44,9 +44,14 @@ button {
     background: #6d4c41;
     color: white;
     border: none;
-    padding: 8px 14px;
-    border-radius: 15px;
+    padding: 10px 14px;
+    margin: 5px;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 ul {
