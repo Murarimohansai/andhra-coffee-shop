@@ -1,215 +1,71 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f7efe5;
+    font-family: Arial, sans-serif;
+    background: #f7efe5;
     color: #3e2723;
-    line-height: 1.6;
 }
 
-/* ===============================
-   HEADER
-================================ */
 header {
-    background: linear-gradient(135deg, #5d4037, #3e2723);
-    color: #ffffff;
-    padding: 25px 15px;
+    background: #5d4037;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    margin: 8px 0 15px;
-}
-
-/* ===============================
-   NAVIGATION
-================================ */
 nav {
-    background-color: #4e342e;
-    padding: 12px;
+    background: #4e342e;
+    padding: 10px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #ffccbc;
-}
-
-/* ===============================
-   HERO SECTION
-================================ */
-.hero {
-    background-color: #d7ccc8;
-    padding: 70px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-/* ===============================
-   SECTIONS
-================================ */
 .section {
-    padding: 50px 20px;
-    max-width: 1000px;
+    padding: 30px;
+    max-width: 900px;
     margin: auto;
 }
 
-.section h2 {
-    border-bottom: 3px solid #6d4c41;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-}
-
-/* ===============================
-   MENU ITEMS
-================================ */
 .menu-item {
-    background-color: #efebe9;
-    margin: 15px 0;
-    padding: 18px;
-    border-left: 6px solid #6d4c41;
-    font-size: 18px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #efebe9;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #6d4c41;
 }
 
-.menu-item:hover {
-    transform: translateX(8px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* ===============================
-   BUTTONS
-================================ */
 button {
-    background-color: #6d4c41;
+    background: #6d4c41;
     color: white;
     border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 25px;
+    padding: 8px 14px;
+    border-radius: 15px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #5d4037;
-    transform: scale(1.05);
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* ===============================
-   REVIEWS
-================================ */
-.review-box {
-    background-color: #fffaf5;
-    padding: 20px;
-    margin: 15px 0;
-    border-left: 5px solid #8d6e63;
-    border-radius: 6px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
 }
 
-.review-text {
-    font-style: italic;
-    font-size: 16px;
+input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 220px;
 }
 
-.review-author {
-    margin-top: 10px;
+#loginMsg {
     font-weight: bold;
-    color: #5d4037;
-}
-
-/* ===============================
-   FORMS
-================================ */
-form {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-form input,
-form textarea {
-    padding: 12px;
-    margin-bottom: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-}
-
-form textarea {
-    resize: none;
-    height: 90px;
-}
-
-/* ===============================
-   FOOTER
-================================ */
-footer {
-    background-color: #3e2723;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-
-/* ===============================
-   DARK MODE
-================================ */
-.dark-mode {
-    background-color: #2b1d1a;
-    color: #f7efe5;
-}
-
-.dark-mode header,
-.dark-mode nav,
-.dark-mode footer {
-    background-color: #1c120f;
-}
-
-/* ===============================
-   RESPONSIVE DESIGN
-================================ */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 26px;
-    }
-
-    .hero h2 {
-        font-size: 26px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
 }
